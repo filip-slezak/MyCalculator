@@ -14,7 +14,9 @@
         android:layout_height="250dp"
         android:background="#EFEFEF"
         android:maxLength="12"
-        android:textSize="48sp" />
+        android:textSize="48sp"
+        android:padding="10dp"
+        android:gravity="right|center_vertical|bottom"/>
 
         <!-- Row1 -->
         <LinearLayout
@@ -59,7 +61,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="+"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             />
 
     </LinearLayout>
@@ -104,7 +106,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="-"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             />
 
     </LinearLayout>
@@ -149,7 +151,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="/"
-                android:onClick="onDigit"
+                android:onClick="onOperator"
                 />
 
         </LinearLayout>
@@ -167,7 +169,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="."
-                android:onClick="onDigit"
+                android:onClick="onDecimalPoint"
                 />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -185,7 +187,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="CLR"
-                android:onClick="onDigit"
+                android:onClick="onClear"
                 />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -194,7 +196,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="*"
-                android:onClick="onDigit"
+                android:onClick="onOperator"
                 />
 
 
@@ -212,6 +214,7 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:text="="
+                android:onClick="onEqual"
             />
         </LinearLayout>
 
